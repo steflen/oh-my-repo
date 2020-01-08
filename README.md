@@ -1,3 +1,9 @@
 # OhMyRepo
 
-Docs will follow
+To commit use:
+
+```
+yarn repo:commit
+```
+
+More docs will follow

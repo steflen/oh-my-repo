@@ -18,13 +18,8 @@
         "lint": {
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
-            "tsConfig": [
-              "testing/tsconfig.libs.json",
-              "testing/tsconfig.libs.spec.json"
-            ],
-            "exclude": [
-              "**/node_modules/**"
-            ]
+            "tsConfig": ["testing/tsconfig.libs.json", "testing/tsconfig.libs.spec.json"],
+            "exclude": ["**/node_modules/**"]
           }
         }
       }
@@ -46,13 +41,8 @@
         "lint": {
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
-            "tsConfig": [
-              "testing/tsconfig.xplat.json",
-              "testing/tsconfig.xplat.spec.json"
-            ],
-            "exclude": [
-              "**/node_modules/**"
-            ]
+            "tsConfig": ["testing/tsconfig.xplat.json", "testing/tsconfig.xplat.spec.json"],
+            "exclude": ["**/node_modules/**"]
           }
         }
       }
@@ -77,14 +67,8 @@
             "polyfills": "apps/web-desktop/src/polyfills.ts",
             "tsConfig": "apps/web-desktop/tsconfig.app.json",
             "aot": false,
-            "assets": [
-              "apps/web-desktop/src/favicon.ico",
-              "apps/web-desktop/src/assets"
-            ],
-            "styles": [
-              "xplat/web/scss/_index.scss",
-              "apps/web-desktop/src/styles.scss"
-            ],
+            "assets": ["apps/web-desktop/src/favicon.ico", "apps/web-desktop/src/assets"],
+            "styles": ["xplat/web/scss/_index.scss", "apps/web-desktop/src/styles.scss"],
             "scripts": []
           },
           "configurations": {
@@ -139,14 +123,8 @@
         "lint": {
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
-            "tsConfig": [
-              "apps/web-desktop/tsconfig.app.json",
-              "apps/web-desktop/tsconfig.spec.json"
-            ],
-            "exclude": [
-              "**/node_modules/**",
-              "!apps/web-desktop/**"
-            ]
+            "tsConfig": ["apps/web-desktop/tsconfig.app.json", "apps/web-desktop/tsconfig.spec.json"],
+            "exclude": ["**/node_modules/**", "!apps/web-desktop/**"]
           }
         },
         "test": {
@@ -180,13 +158,8 @@
         "lint": {
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
-            "tsConfig": [
-              "apps/web-desktop-e2e/tsconfig.e2e.json"
-            ],
-            "exclude": [
-              "**/node_modules/**",
-              "!apps/web-desktop-e2e/**"
-            ]
+            "tsConfig": ["apps/web-desktop-e2e/tsconfig.e2e.json"],
+            "exclude": ["**/node_modules/**", "!apps/web-desktop-e2e/**"]
           }
         }
       }
@@ -217,16 +190,11 @@
               {
                 "glob": "**/*",
                 "input": "apps/electron-desktop/src/",
-                "ignore": [
-                  "**/*.ts"
-                ],
+                "ignore": ["**/*.ts"],
                 "output": ""
               }
             ],
-            "styles": [
-              "xplat/web/scss/_index.scss",
-              "apps/web-desktop/src/styles.scss"
-            ],
+            "styles": ["xplat/web/scss/_index.scss", "apps/web-desktop/src/styles.scss"],
             "scripts": []
           },
           "configurations": {
@@ -294,14 +262,8 @@
             "polyfills": "apps/web-browser/src/polyfills.ts",
             "tsConfig": "apps/web-browser/tsconfig.app.json",
             "aot": false,
-            "assets": [
-              "apps/web-browser/src/favicon.ico",
-              "apps/web-browser/src/assets"
-            ],
-            "styles": [
-              "xplat/web/scss/_index.scss",
-              "apps/web-browser/src/styles.scss"
-            ],
+            "assets": ["apps/web-browser/src/favicon.ico", "apps/web-browser/src/assets"],
+            "styles": ["xplat/web/scss/_index.scss", "apps/web-browser/src/styles.scss"],
             "scripts": []
           },
           "configurations": {
@@ -356,14 +318,8 @@
         "lint": {
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
-            "tsConfig": [
-              "apps/web-browser/tsconfig.app.json",
-              "apps/web-browser/tsconfig.spec.json"
-            ],
-            "exclude": [
-              "**/node_modules/**",
-              "!apps/web-browser/**"
-            ]
+            "tsConfig": ["apps/web-browser/tsconfig.app.json", "apps/web-browser/tsconfig.spec.json"],
+            "exclude": ["**/node_modules/**", "!apps/web-browser/**"]
           }
         },
         "test": {
@@ -397,13 +353,8 @@
         "lint": {
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
-            "tsConfig": [
-              "apps/web-browser-e2e/tsconfig.e2e.json"
-            ],
-            "exclude": [
-              "**/node_modules/**",
-              "!apps/web-browser-e2e/**"
-            ]
+            "tsConfig": ["apps/web-browser-e2e/tsconfig.e2e.json"],
+            "exclude": ["**/node_modules/**", "!apps/web-browser-e2e/**"]
           }
         }
       }
