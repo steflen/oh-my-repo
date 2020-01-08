@@ -1,0 +1,51 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "rootDir": ".",
+    "sourceMap": true,
+    "declaration": false,
+    "moduleResolution": "node",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "importHelpers": true,
+    "target": "es2015",
+    "module": "esnext",
+    "typeRoots": [
+      "node_modules/@types"
+    ],
+    "lib": [
+      "es2017",
+      "dom"
+    ],
+    "skipLibCheck": true,
+    "skipDefaultLibCheck": true,
+    "baseUrl": ".",
+    "paths": {
+      "@oh-my-repo/*": [
+        "libs/*"
+      ],
+      "@oh-my-repo/web": [
+        "xplat/web/index.ts"
+      ],
+      "@oh-my-repo/web/*": [
+        "xplat/web/*"
+      ],
+      "@oh-my-repo/electron": [
+        "xplat/electron/index.ts"
+      ],
+      "@oh-my-repo/electron/*": [
+        "xplat/electron/*"
+      ],
+      "@oh-my-repo/nativescript": [
+        "xplat/nativescript/index.ts"
+      ],
+      "@oh-my-repo/nativescript/*": [
+        "xplat/nativescript/*"
+      ]
+    }
+  },
+  "exclude": [
+    "node_modules",
+    "tmp"
+  ]
+}

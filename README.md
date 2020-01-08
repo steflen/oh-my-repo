@@ -1,0 +1,3 @@
+# OhMyRepo
+
+Docs will follow

@@ -1,0 +1,39 @@
+{
+  "npmScope": "oh-my-repo",
+  "implicitDependencies": {
+    "workspace.json": "*",
+    "package.json": {
+      "dependencies": "*",
+      "devDependencies": "*"
+    },
+    "tsconfig.json": "*",
+    "tslint.json": "*",
+    "nx.json": "*"
+  },
+  "projects": {
+    "libs": {
+      "tags": []
+    },
+    "xplat": {
+      "tags": []
+    },
+    "web-desktop-e2e": {
+      "tags": []
+    },
+    "web-desktop": {
+      "tags": []
+    },
+    "electron-desktop": {
+      "tags": []
+    },
+    "web-browser-e2e": {
+      "tags": []
+    },
+    "web-browser": {
+      "tags": []
+    },
+    "nativescript-mobile": {
+      "tags": []
+    }
+  }
+}

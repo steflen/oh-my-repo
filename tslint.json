@@ -1,0 +1,7 @@
+{
+  "rules": {
+    "no-console": [true, "debug", "time", "timeEnd", "trace"],
+    "directive-selector": [true, "attribute", "oh-my-repo", "camelCase"],
+    "component-selector": [true, "element", "oh-my-repo", "kebab-case"]
+  }
+}
