@@ -1,15 +1,9 @@
-import { TestBed, async } from '@angular/core/testing';
 import { HttpClient } from '@angular/common/http';
-import {
-  HttpClientTestingModule,
-  HttpTestingController
-} from '@angular/common/http/testing';
-import {
-  TranslateLoader,
-  TranslateModule,
-  TranslateService
-} from '@ngx-translate/core';
+import { HttpClientTestingModule, HttpTestingController } from '@angular/common/http/testing';
+import { async, TestBed } from '@angular/core/testing';
+import { TranslateLoader, TranslateModule, TranslateService } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
+
 import { AppComponent } from './app.component';
 
 const translationsEn = require('../assets/i18n/en.json');
@@ -29,12 +23,12 @@ describe('AppComponent', () => {
           loader: {
             provide: TranslateLoader,
             useFactory: HttpLoaderFactory,
-            deps: [HttpClient]
-          }
-        })
+            deps: [HttpClient],
+          },
+        }),
       ],
       declarations: [AppComponent],
-      providers: [TranslateService]
+      providers: [TranslateService],
     }).compileComponents();
     translate = TestBed.get(TranslateService);
     http = TestBed.get(HttpTestingController);

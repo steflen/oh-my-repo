@@ -1,10 +1,10 @@
 import { NgModule, Optional, SkipSelf } from '@angular/core';
 
 // nativescript
-import { NativeScriptModule } from 'nativescript-angular/nativescript.module';
 import { NativeScriptHttpClientModule } from 'nativescript-angular/http-client';
-import { device } from 'tns-core-modules/platform';
+import { NativeScriptModule } from 'nativescript-angular/nativescript.module';
 import { TNSFontIconModule } from 'nativescript-ngx-fonticon';
+import { device } from 'tns-core-modules/platform';
 
 // libs
 import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
@@ -13,15 +13,15 @@ import { throwIfAlreadyLoaded } from '@oh-my-repo/utils';
 
 // app
 import { CORE_PROVIDERS } from './services';
-import { TNSWindowService } from './services/tns-window.service';
 import { TNSTranslateLoader } from './services/tns-translate.loader';
+import { TNSWindowService } from './services/tns-window.service';
 
 // factories
-export function platformLangFactory() {
+export const platformLangFactory = (): string => {
   return device.language;
 }
 
-export function createTranslateLoader() {
+export const createTranslateLoader = ():any => {
   return new TNSTranslateLoader('/assets/i18n/');
 }
 
@@ -47,7 +47,7 @@ export function createTranslateLoader() {
         provide: TranslateLoader,
         useFactory: createTranslateLoader
       }
-    }),
+    })
   ],
   providers: [
     ...CORE_PROVIDERS
@@ -57,7 +57,7 @@ export class OhMyRepoCoreModule {
   constructor(
     @Optional()
     @SkipSelf()
-    parentModule: OhMyRepoCoreModule
+      parentModule: OhMyRepoCoreModule
   ) {
     throwIfAlreadyLoaded(parentModule, 'OhMyRepoCoreModule');
   }

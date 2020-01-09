@@ -1,4 +1,4 @@
-import { HeaderComponent } from './header/header.component';
+import { HeaderComponent } from '@oh-my-repo/web/features';
 
 export const UI_COMPONENTS = [HeaderComponent];
 

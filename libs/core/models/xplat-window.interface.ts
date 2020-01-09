@@ -6,19 +6,12 @@ export interface IXPlatWindow {
   require?: any;
   alert(msg: any): Promise<any>;
   confirm(msg: any): Promise<any>;
-  setTimeout(handler: (...args: any[]) => void, timeout?: number): number;
+  setTimeout(handler: (...args: Array<any>) => void, timeout?: number): number;
   clearTimeout(timeoutId: number): void;
-  setInterval(
-    handler: (...args: any[]) => void,
-    ms?: number,
-    ...args: any[]
-  ): number;
+  setInterval(handler: (...args: Array<any>) => void, ms?: number, ...args: Array<any>): number;
   clearInterval(intervalId: number): void;
 
   // ...expand support for more window methods as you needed here...
 }
 
-export type XPlatWindow = Partial<
-  Pick<Window, Exclude<keyof Window, keyof IXPlatWindow>>
-> &
-  IXPlatWindow;
+export type XPlatWindow = Partial<Pick<Window, Exclude<keyof Window, keyof IXPlatWindow>>> & IXPlatWindow;

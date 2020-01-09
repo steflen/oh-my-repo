@@ -1,11 +1,5 @@
-import {
-  ModuleWithProviders,
-  NgModule,
-  Optional,
-  SkipSelf,
-  Inject
-} from '@angular/core';
 import { APP_BASE_HREF, CommonModule } from '@angular/common';
+import { Inject, ModuleWithProviders, NgModule, Optional, SkipSelf } from '@angular/core';
 
 // libs
 import { TranslateService } from '@ngx-translate/core';
@@ -21,7 +15,7 @@ import { LogService } from './services/log.service';
  */
 LogService.DEBUG.LEVEL_4 = !environment.production;
 
-export const BASE_PROVIDERS: any[] = [
+export const BASE_PROVIDERS: Array<any> = [
   ...CORE_PROVIDERS,
   {
     provide: APP_BASE_HREF,
@@ -42,9 +36,7 @@ export class CoreModule {
   }
 
   constructor(
-    @Optional()
-    @SkipSelf()
-    parentModule: CoreModule,
+    @Optional() @SkipSelf() parentModule: CoreModule,
     @Inject(PlatformLanguageToken) lang: string,
     translate: TranslateService
   ) {

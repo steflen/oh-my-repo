@@ -10,10 +10,7 @@ let win: Electron.BrowserWindow = null;
 
 const getFromEnv = parseInt(process.env.ELECTRON_IS_DEV, 10) === 1;
 const isEnvSet = 'ELECTRON_IS_DEV' in process.env;
-const debugMode = isEnvSet
-  ? getFromEnv
-  : process.defaultApp ||
-    /node_modules[\\/]electron[\\/]/.test(process.execPath);
+const debugMode = isEnvSet ? getFromEnv : process.defaultApp || /node_modules[\\/]electron[\\/]/.test(process.execPath);
 
 /**
  * Electron window settings
@@ -28,8 +25,8 @@ const mainWindowSettings: Electron.BrowserWindowConstructorOptions = {
   // titleBarStyle: 'hidden',
   webPreferences: {
     devTools: debugMode,
-    nodeIntegration: debugMode
-  }
+    nodeIntegration: debugMode,
+  },
 };
 
 /**
@@ -67,7 +64,7 @@ function createWindow() {
   let launchPath;
   if (serve) {
     require('electron-reload')(__dirname, {
-      electron: require(`${__dirname}/../../../node_modules/electron`)
+      electron: require(`${__dirname}/../../../node_modules/electron`),
     });
     launchPath = 'http://localhost:4200';
     win.loadURL(launchPath);
@@ -75,7 +72,7 @@ function createWindow() {
     launchPath = url.format({
       pathname: path.join(__dirname, 'index.html'),
       protocol: 'file:',
-      slashes: true
+      slashes: true,
     });
     win.loadURL(launchPath);
   }

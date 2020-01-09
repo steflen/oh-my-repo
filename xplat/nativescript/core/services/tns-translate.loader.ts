@@ -1,24 +1,26 @@
 import { Observable, Observer } from 'rxjs';
 
 // nativescript
-import { knownFolders, File, Folder, path } from 'tns-core-modules/file-system';
+import { File, Folder, knownFolders, path } from 'tns-core-modules/file-system';
 
 export class TNSTranslateLoader {
-  constructor(private _path: string) {}
+  constructor(private _path: string) {
+  }
 
-  public getTranslation(lang: string) {
+  public getTranslation(lang: string): any {
     const filePath = `${this._path || '/assets/i18n/'}${lang}.json`;
+
     // console.log('TNSTranslateLoader getTranslation:', filePath);
     return this.requestLocalFile(filePath);
   }
 
   private requestLocalFile(url: string): Observable<any> {
-    url = this._getAbsolutePath(url);
+    const tmpUrl = this._getAbsolutePath(url);
 
     // request from local app resources
     return new Observable((observer: Observer<any>) => {
-      if (this._fileExists(url)) {
-        const localFile = this._fileFromPath(url);
+      if (this._fileExists(tmpUrl)) {
+        const localFile = this._fileFromPath(tmpUrl);
         localFile.readText().then(
           (data: string) => {
             try {
@@ -49,25 +51,27 @@ export class TNSTranslateLoader {
     });
   }
 
-  private _isLocalRequest(url: string): boolean {
+  private _isLocalRequest = (url: string): boolean => {
     return url.indexOf('~') === 0 || url.indexOf('/') === 0;
-  }
+  };
 
-  private _currentApp(): Folder {
+  private _currentApp = (): Folder => {
     return knownFolders.currentApp();
-  }
+  };
 
-  private _fileFromPath(filePath: string): File {
+  private _fileFromPath = (filePath: string): File => {
     return File.fromPath(filePath);
-  }
+  };
 
-  private _fileExists(filePath: string): boolean {
+  private _fileExists = (filePath: string): boolean => {
     return File.exists(filePath);
-  }
+  };
 
   private _getAbsolutePath(url: string): string {
-    url = url.replace('~', '').replace('/', '');
-    url = path.join(this._currentApp().path, url);
-    return url;
+
+    let tmpUrl = url.replace('~', '').replace('/', '');
+    tmpUrl = path.join(this._currentApp().path, tmpUrl);
+
+    return tmpUrl;
   }
 }

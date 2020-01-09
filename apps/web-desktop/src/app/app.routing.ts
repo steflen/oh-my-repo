@@ -9,15 +9,15 @@ const routes: Routes = [
   {
     path: '',
     redirectTo: '/home',
-    pathMatch: 'full'
+    pathMatch: 'full',
   },
   {
     path: 'home',
-    loadChildren: './features/home/home.module#HomeModule'
-  }
+    loadChildren: './features/home/home.module#HomeModule',
+  },
 ];
 
 @NgModule({
-  imports: [SharedModule, RouterModule.forRoot(routes)]
+  imports: [SharedModule, RouterModule.forRoot(routes)],
 })
 export class AppRoutingModule {}

@@ -1,0 +1,10 @@
+{
+  "extends": "../tsconfig.json",
+  "compilerOptions": {
+    "types": ["node"],
+    "emitDecoratorMetadata": true
+  },
+  "exclude": ["../libs/**/*.spec.ts", "../libs/**/*.e2e-spec.ts"],
+  "include": ["../libs/**/*"],
+  "files": ["./typings.d.ts"]
+}

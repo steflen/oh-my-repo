@@ -12,6 +12,6 @@ import { AppComponent } from './app.component';
 @NgModule({
   imports: [CoreModule, SharedModule],
   declarations: [AppComponent],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
 export class AppModule {}

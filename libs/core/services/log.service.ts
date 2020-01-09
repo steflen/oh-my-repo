@@ -21,15 +21,16 @@ export class LogService {
 
   // info (extra messages like analytics)
   // use LEVEL_5 to see only these
-  public info(...msg: Array<any>) {
+  public info(...msg: Array<any>): void {
     if (LogService.DEBUG.LEVEL_5 || LogService.DEBUG.LEVEL_4) {
       // extra messages
+      // tslint:disable-next-line:no-console
       console.info(msg);
     }
   }
 
   // debug (standard output)
-  public debug(...msg: Array<any>) {
+  public debug(...msg: Array<any>): void {
     if (LogService.DEBUG.LEVEL_4 || LogService.DEBUG.LEVEL_3) {
       // console.debug does not work on {N} apps... use `log`
       console.log(msg);
@@ -37,23 +38,15 @@ export class LogService {
   }
 
   // error
-  public error(...err: Array<any>) {
-    if (
-      LogService.DEBUG.LEVEL_4 ||
-      LogService.DEBUG.LEVEL_3 ||
-      LogService.DEBUG.LEVEL_2
-    ) {
+  public error(...err: Array<any>): void {
+    if (LogService.DEBUG.LEVEL_4 || LogService.DEBUG.LEVEL_3 || LogService.DEBUG.LEVEL_2) {
       console.error(err);
     }
   }
 
   // warn
-  public warn(...warn: Array<any>) {
-    if (
-      LogService.DEBUG.LEVEL_4 ||
-      LogService.DEBUG.LEVEL_3 ||
-      LogService.DEBUG.LEVEL_1
-    ) {
+  public warn(...warn: Array<any>): void {
+    if (LogService.DEBUG.LEVEL_4 || LogService.DEBUG.LEVEL_3 || LogService.DEBUG.LEVEL_1) {
       console.warn(warn);
     }
   }

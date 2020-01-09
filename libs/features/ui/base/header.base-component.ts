@@ -1,4 +1,4 @@
-import { Component, Input, Output, EventEmitter } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 
 // libs
 import { BaseComponent } from '@oh-my-repo/core/base';
@@ -10,5 +10,5 @@ export abstract class HeaderBaseComponent extends BaseComponent {
    */
   @Input() title: string;
   @Input() rightButton: string;
-  @Output() tappedRight: EventEmitter<boolean> = new EventEmitter();
+  @Output() readonly tappedRight:  EventEmitter<boolean> = new EventEmitter();
 }

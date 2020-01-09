@@ -1,5 +1,11 @@
 # See http://help.github.com/ignore-files/ for more about ignoring files.
 
+
+# private environment variables !!
+.env
+
+
+
 # compiled output
 /dist
 /tmp
@@ -45,7 +51,7 @@ libs/**/*.d.ts
 libs/**/*.metadata.json
 libs/**/*.ngfactory.ts
 libs/**/*.ngsummary.json
-      
+
 # xplat
 xplat/**/*.js
 xplat/**/*.map
@@ -53,4 +59,5 @@ xplat/**/*.d.ts
 xplat/**/*.metadata.json
 xplat/**/*.ngfactory.ts
 xplat/**/*.ngsummary.json
-      
+
+

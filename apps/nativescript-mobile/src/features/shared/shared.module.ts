@@ -7,6 +7,6 @@ const MODULES = [UIModule];
 
 @NgModule({
   imports: [...MODULES],
-  exports: [...MODULES]
+  exports: [...MODULES],
 })
 export class SharedModule {}

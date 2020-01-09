@@ -1,7 +1,179 @@
 {
+  "extends": ["angular-tslint-rules", "tslint-config-prettier"],
+  "rulesDirectory": [
+    "node_modules/codelyzer",
+    "node_modules/@nrwl/workspace/src/tslint"
+  ],
   "rules": {
-    "no-console": [true, "debug", "time", "timeEnd", "trace"],
-    "directive-selector": [true, "attribute", "oh-my-repo", "camelCase"],
-    "component-selector": [true, "element", "oh-my-repo", "kebab-case"]
+    "directive-selector": [true, "attribute", "ohMyRepo", "camelCase"],
+    "component-selector": [true, "element", "oh-my-repo", "kebab-case"],
+    "no-implicit-dependencies": false,
+    "invalid-void": [
+      true,
+      {
+        "allow-generics": ["BehaviorSubject", "EventEmitter", "Observable", "Promise", "Subject"]
+      }
+    ],
+    "arrow-return-shorthand": true,
+    "callable-types": true,
+    "class-name": true,
+    "deprecation": {
+      "severity": "warn"
+    },
+    "forin": true,
+    "import-blacklist": [
+      true,
+      "rxjs/Rx"
+    ],
+    "interface-name": false,
+    "interface-over-type-literal": true,
+    "member-access": false,
+    "member-ordering": [
+      true,
+      {
+        "order": [
+          "static-field",
+          "instance-field",
+          "static-method",
+          "instance-method"
+        ]
+      }
+    ],
+    "no-arg": true,
+    "no-bitwise": true,
+    "no-console": [
+      true,
+      "debug",
+      "info",
+      "time",
+      "timeEnd",
+      "trace"
+    ],
+    "no-construct": true,
+    "no-debugger": true,
+    "no-duplicate-super": true,
+    "no-empty": false,
+    "no-empty-interface": true,
+    "no-eval": true,
+    "no-inferrable-types": [
+      true,
+      "ignore-params"
+    ],
+    "no-misused-new": true,
+    "no-non-null-assertion": true,
+    "no-shadowed-variable": true,
+    "no-string-literal": false,
+    "no-string-throw": true,
+    "no-switch-case-fall-through": true,
+    "no-unnecessary-initializer": true,
+    "no-unused-expression": true,
+    "no-use-before-declare": true,
+    "no-var-keyword": true,
+    "object-literal-sort-keys": false,
+    "prefer-const": true,
+    "radix": true,
+    "triple-equals": [
+      true,
+      "allow-null-check"
+    ],
+    "unified-signatures": true,
+    "variable-name": false,
+
+    "templates-no-negated-async": false,
+    "template-i18n": [
+      true,
+      "check-id",
+      "check-text",
+      {
+        "blacklist": ["mat-icon"]
+      }
+    ],
+    "no-forward-ref": false,
+    "template-no-call-expression": false,
+    "no-unused-css": false,
+    "template-conditional-complexity": false,
+    "template-cyclomatic-complexity": false,
+    "no-output-on-prefix": true,
+    "use-input-property-decorator": true,
+    "use-output-property-decorator": true,
+    "use-host-property-decorator": true,
+    "no-input-rename": true,
+    "no-output-rename": true,
+    "use-life-cycle-interface": true,
+    "component-class-suffix": true,
+    "directive-class-suffix": true,
+    "ordered-imports": [
+      true,
+      {
+        "import-sources-order": "case-insensitive",
+        "named-imports-order": "case-insensitive",
+        "grouped-imports": true
+      }
+    ],
+    "ban-ts-ignore": false,
+    "no-conflicting-lifecycle": true,
+    "no-host-metadata-property": true,
+    "no-inputs-metadata-property": true,
+    "no-output-native": true,
+    "no-outputs-metadata-property": true,
+    "template-banana-in-box": true,
+    "template-no-negated-async": true,
+    "use-lifecycle-interface": true,
+    "use-pipe-transform-interface": true,
+
+    // FROM HERE TO BOTTOM
+    // IMPORTANT SETTINGS FOR FOR NX TAGS
+    // ==> "WHAT BELONGS WHERE"
+    "nx-enforce-module-boundaries": [
+      true,
+      {
+        "allow": [],
+        "depConstraints": [
+          {
+            "sourceTag": "status:stable",
+            "onlyDependOnLibsWithTags": [
+              "status:stable"
+            ]
+          },
+          {
+            "sourceTag": "type:app",
+            "onlyDependOnLibsWithTags": ["type:feature", "type:ui"]
+          },
+          {
+            "sourceTag": "type:feature",
+            "onlyDependOnLibsWithTags": [
+              "type:ui",
+              "type:data",
+              "type:types",
+              "type:state"
+            ]
+          },
+          {
+            "sourceTag": "type:types",
+            "onlyDependOnLibsWithTags": ["type:types"]
+          },
+          {
+            "sourceTag": "type:state",
+            "onlyDependOnLibsWithTags": [
+              "type:state",
+              "type:types",
+              "type:data"
+            ]
+          },
+          {
+            "sourceTag": "type:data",
+            "onlyDependOnLibsWithTags": ["type:types"]
+          },
+          {
+            "sourceTag": "type:e2e",
+            "onlyDependOnLibsWithTags": ["type:e2e-utils"]
+          },
+          {
+            "sourceTag": "type:ui",
+            "onlyDependOnLibsWithTags": ["type:types", "type:ui"]
+          }
+        ]
+      }
+    ]
   }
 }

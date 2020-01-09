@@ -4,6 +4,6 @@ import { NgModule } from '@angular/core';
 import { OhMyRepoCoreModule } from '@oh-my-repo/web';
 
 @NgModule({
-  imports: [OhMyRepoCoreModule]
+  imports: [OhMyRepoCoreModule],
 })
 export class CoreModule {}
