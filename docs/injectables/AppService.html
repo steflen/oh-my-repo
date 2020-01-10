@@ -1,0 +1,925 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>oh-my-repo documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	      <link rel="stylesheet" href="../styles/style.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">oh-my-repo documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content injectable">
+                   <div class="content-data">
+
+
+
+
+
+
+
+<ol class="breadcrumb">
+  <li>Injectables</li>
+  <li>AppService</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info">
+        <p class="comment">
+            <h3>File</h3>
+        </p>
+        <p class="comment">
+            <code>xplat/nativescript/core/services/app.service.ts</code>
+        </p>
+
+            <p class="comment">
+                <h3>Description</h3>
+            </p>
+            <p class="comment">
+                <p>This service can be used for low level app wiring
+for best practice purposes, this service sets up:</p>
+<ul>
+<li>app version</li>
+<li>orientation handling including a Subject the app can observe</li>
+<li>deviceType to help component bindings</li>
+<li>example of global app event wiring for resume/suspend</li>
+</ul>
+
+            </p>
+
+
+
+            <section>
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#_appVersion">_appVersion</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#_deviceType">_deviceType</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#_orientation">_orientation</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#_orientation$">_orientation$</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#_initAppEvents">_initAppEvents</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#_initAppVersion">_initAppVersion</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#_initLocale">_initLocale</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#_initOrientation">_initOrientation</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+
+                    <tr>
+                        <td class="col-md-4">
+                            <h6><b>Accessors</b></h6>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <ul class="index-list">
+                                <li>
+                                    <a href="#orientation">orientation</a>
+                                </li>
+                                <li>
+                                    <a href="#orientation$">orientation$</a>
+                                </li>
+                                <li>
+                                    <a href="#deviceType">deviceType</a>
+                                </li>
+                                <li>
+                                    <a href="#appVersion">appVersion</a>
+                                </li>
+                            </ul>
+                        </td>
+                    </tr>
+        </tbody>
+    </table>
+</section>
+
+            <section>
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(_ngZone: <a href="https://angular.io/api/core/NgZone" target="_blank">NgZone</a>, _log: <a href="../injectables/LogService.html">LogService</a>, _translate: TranslateService, _lang: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="31" class="link-to-prism">xplat/nativescript/core/services/app.service.ts:31</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div>
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>_ngZone</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="https://angular.io/api/core/NgZone" target="_blank" >NgZone</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>_log</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/LogService.html" target="_self" >LogService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>_translate</td>
+                                                  
+                                                        <td>
+                                                                    <code>TranslateService</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>_lang</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+            <section>
+    
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="_initAppEvents"></a>
+                    <span class="name">
+                        <b>
+                            <span class="modifier">Private</span>
+                            _initAppEvents
+                        </b>
+                        <a href="#_initAppEvents"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>_initAppEvents()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="94"
+                            class="link-to-prism">xplat/nativescript/core/services/app.service.ts:94</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="_initAppVersion"></a>
+                    <span class="name">
+                        <b>
+                            <span class="modifier">Private</span>
+                            _initAppVersion
+                        </b>
+                        <a href="#_initAppVersion"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>_initAppVersion()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="68"
+                            class="link-to-prism">xplat/nativescript/core/services/app.service.ts:68</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="_initLocale"></a>
+                    <span class="name">
+                        <b>
+                            <span class="modifier">Private</span>
+                            _initLocale
+                        </b>
+                        <a href="#_initLocale"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>_initLocale()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="90"
+                            class="link-to-prism">xplat/nativescript/core/services/app.service.ts:90</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="_initOrientation"></a>
+                    <span class="name">
+                        <b>
+                            <span class="modifier">Private</span>
+                            _initOrientation
+                        </b>
+                        <a href="#_initOrientation"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>_initOrientation()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="104"
+                            class="link-to-prism">xplat/nativescript/core/services/app.service.ts:104</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+            <section>
+    
+        <h3 id="inputs">
+            Properties
+        </h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="_appVersion"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Private</span>
+                            _appVersion</b>
+                            <a href="#_appVersion"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="26" class="link-to-prism">xplat/nativescript/core/services/app.service.ts:26</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="_deviceType"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Private</span>
+                            _deviceType</b>
+                            <a href="#_deviceType"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code>&quot;Phone&quot; | &quot;Tablet&quot;</code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="31" class="link-to-prism">xplat/nativescript/core/services/app.service.ts:31</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="_orientation"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Private</span>
+                            _orientation</b>
+                            <a href="#_orientation"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="29" class="link-to-prism">xplat/nativescript/core/services/app.service.ts:29</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="_orientation$"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Private</span>
+                            _orientation$</b>
+                            <a href="#_orientation$"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code>Subject&lt;any&gt;</code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>new Subject()</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="30" class="link-to-prism">xplat/nativescript/core/services/app.service.ts:30</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+</section>
+
+            <section>
+    <h3 id="accessors">
+        Accessors
+    </h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="orientation"></a>
+                        <span class="name"><b>orientation</b><a href="#orientation"><span class="icon ion-ios-link"></span></a></span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <span class="accessor"><b>get</b><code>orientation()</code></span>
+                    </td>
+                </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="46" class="link-to-prism">xplat/nativescript/core/services/app.service.ts:46</a></div>
+                                </td>
+                            </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <span class="accessor"><b>set</b><code>orientation(value)</code></span>
+                    </td>
+                </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="50" class="link-to-prism">xplat/nativescript/core/services/app.service.ts:50</a></div>
+                                </td>
+                            </tr>
+                    <tr>
+                        <td class="col-md-4">
+
+                                <div class="io-description">
+                                        <b>Parameters :</b>
+                                        <table class="params">
+                                            <thead>
+                                                <tr>
+                                                    <td>Name</td>
+                                                    <td>Optional</td>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                    <tr>
+                                                            <td>value</td>
+                                                    
+                                                    
+                                                        <td>
+                                                                No
+                                                        </td>
+                                                        
+                                                    </tr>
+                                            </tbody>
+                                        </table>
+                                </div>
+                                <div>
+                                </div>
+                                <div class="io-description">
+                                    <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                                </div>
+                        </td>
+                    </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="orientation$"></a>
+                        <span class="name"><b>orientation$</b><a href="#orientation$"><span class="icon ion-ios-link"></span></a></span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <span class="accessor"><b>get</b><code>orientation$()</code></span>
+                    </td>
+                </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="56" class="link-to-prism">xplat/nativescript/core/services/app.service.ts:56</a></div>
+                                </td>
+                            </tr>
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="deviceType"></a>
+                        <span class="name"><b>deviceType</b><a href="#deviceType"><span class="icon ion-ios-link"></span></a></span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <span class="accessor"><b>get</b><code>deviceType()</code></span>
+                    </td>
+                </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="60" class="link-to-prism">xplat/nativescript/core/services/app.service.ts:60</a></div>
+                                </td>
+                            </tr>
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="appVersion"></a>
+                        <span class="name"><b>appVersion</b><a href="#appVersion"><span class="icon ion-ios-link"></span></a></span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <span class="accessor"><b>get</b><code>appVersion()</code></span>
+                    </td>
+                </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="64" class="link-to-prism">xplat/nativescript/core/services/app.service.ts:64</a></div>
+                                </td>
+                            </tr>
+
+            </tbody>
+        </table>
+</section>
+    </div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Injectable, Inject, NgZone } from &#x27;@angular/core&#x27;;
+
+// nativescript
+import * as tnsApp from &#x27;tns-core-modules/application&#x27;;
+import * as tnsUtils from &#x27;tns-core-modules/utils/utils&#x27;;
+import { device, isIOS, isAndroid } from &#x27;tns-core-modules/platform&#x27;;
+import { DeviceOrientation } from &#x27;tns-core-modules/ui/enums&#x27;;
+
+// libs
+import { TranslateService } from &#x27;@ngx-translate/core&#x27;;
+import { Subject } from &#x27;rxjs&#x27;;
+import { LogService, PlatformLanguageToken } from &#x27;@oh-my-repo/core&#x27;;
+
+/**
+ * This service can be used for low level app wiring
+ * for best practice purposes, this service sets up:
+ * - app version
+ * - orientation handling including a Subject the app can observe
+ * - deviceType to help component bindings
+ * - example of global app event wiring for resume/suspend
+ */
+@Injectable()
+export class AppService {
+  // fundamentals
+  private _appVersion: string;
+
+  // orientation helper
+  private _orientation: string;
+  private _orientation$: Subject&lt;any&gt; &#x3D; new Subject();
+  private _deviceType: &#x27;Phone&#x27; | &#x27;Tablet&#x27;;
+
+  constructor(
+    private _ngZone: NgZone,
+    private _log: LogService,
+    private _translate: TranslateService,
+    @Inject(PlatformLanguageToken) private _lang: string
+  ) {
+    // initialize core services
+    this._initAppVersion();
+    this._initLocale();
+    this._initOrientation();
+    this._initAppEvents();
+  }
+
+  public get orientation() {
+    return this._orientation;
+  }
+
+  public set orientation(value) {
+    this._log.debug(&#x27;setting orientation:&#x27;, value);
+    this._orientation &#x3D; value;
+    this._orientation$.next(value);
+  }
+
+  public get orientation$() {
+    return this._orientation$;
+  }
+
+  public get deviceType() {
+    return this._deviceType;
+  }
+
+  public get appVersion() {
+    return this._appVersion;
+  }
+
+  private _initAppVersion() {
+    let versionName: string;
+    let buildNumber: string;
+
+    if (tnsApp.android) {
+      const pi &#x3D; tnsApp.android.context
+        .getPackageManager()
+        .getPackageInfo(tnsApp.android.context.getPackageName(), 0);
+      versionName &#x3D; pi.versionName;
+      buildNumber &#x3D; pi.versionCode.toString();
+    } else if (tnsApp.ios) {
+      versionName &#x3D; NSBundle.mainBundle.objectForInfoDictionaryKey(
+        &#x27;CFBundleShortVersionString&#x27;
+      );
+      buildNumber &#x3D; NSBundle.mainBundle.objectForInfoDictionaryKey(
+        &#x27;CFBundleVersion&#x27;
+      );
+    }
+    this._appVersion &#x3D; &#x60;v${versionName} (${buildNumber})&#x60;;
+    this._log.debug(&#x27;App version:&#x27;, this._appVersion);
+  }
+
+  private _initLocale() {
+    this._translate.use(this._lang);
+  }
+
+  private _initAppEvents() {
+    // For the future - may want to use these
+    tnsApp.on(tnsApp.resumeEvent, () &#x3D;&gt; {
+      this._log.debug(&#x27;tnsApp.resumeEvent&#x27;);
+    });
+    tnsApp.on(tnsApp.suspendEvent, () &#x3D;&gt; {
+      this._log.debug(&#x27;tnsApp.suspendEvent&#x27;);
+    });
+  }
+
+  private _initOrientation() {
+    this._deviceType &#x3D; device.deviceType;
+    this._log.debug(&#x27;deviceType:&#x27;, this._deviceType);
+    this._log.debug(&#x27;initializing orientation handling.&#x27;);
+
+    // set initial orientation
+    let orientation &#x3D; getOrientation();
+    this.orientation &#x3D; orientation ? orientation : DeviceOrientation.portrait;
+    this._log.debug(&#x27;current orientation:&#x27;, this.orientation);
+
+    // handle orientation changes
+    tnsApp.on(tnsApp.orientationChangedEvent, e &#x3D;&gt; {
+      // sometimes e.newValue will be undefined, ignore those
+      if (e.newValue &amp;&amp; this.orientation !&#x3D;&#x3D; e.newValue) {
+        orientation &#x3D; getOrientation();
+        if (orientation) {
+          this._log.debug(&#x60;Old: ${this.orientation}; New: ${orientation}&#x60;);
+          this._ngZone.run(() &#x3D;&gt; {
+            this.orientation &#x3D; orientation;
+          });
+        }
+      }
+    });
+  }
+}
+
+const getOrientation &#x3D; function() {
+  if (isIOS) {
+    const deviceOrientation &#x3D; UIDevice.currentDevice.orientation;
+    if (
+      deviceOrientation &#x3D;&#x3D;&#x3D; UIDeviceOrientation.LandscapeLeft ||
+      deviceOrientation &#x3D;&#x3D;&#x3D; UIDeviceOrientation.LandscapeRight
+    ) {
+      return DeviceOrientation.landscape;
+    } else if (
+      deviceOrientation &#x3D;&#x3D;&#x3D; UIDeviceOrientation.Portrait ||
+      deviceOrientation &#x3D;&#x3D; UIDeviceOrientation.PortraitUpsideDown
+    ) {
+      return DeviceOrientation.portrait;
+    } else {
+      return &#x27;&#x27;;
+    }
+  } else {
+    const orientation &#x3D; getContext()
+      .getResources()
+      .getConfiguration().orientation;
+    switch (orientation) {
+      case 1 /* ORIENTATION_PORTRAIT (0x00000001) */:
+        return DeviceOrientation.portrait;
+      case 2 /* ORIENTATION_LANDSCAPE (0x00000002) */:
+        return DeviceOrientation.landscape;
+      default:
+        /* ORIENTATION_UNDEFINED (0x00000000) */
+        return DeviceOrientation.portrait;
+    }
+  }
+};
+
+const getContext &#x3D; function(): android.app.Application {
+  const ctx &#x3D; java.lang.Class.forName(&#x27;android.app.AppGlobals&#x27;)
+    .getMethod(&#x27;getInitialApplication&#x27;, null)
+    .invoke(null, null);
+  if (ctx) {
+    return ctx;
+  }
+  return java.lang.Class.forName(&#x27;android.app.ActivityThread&#x27;)
+    .getMethod(&#x27;currentApplication&#x27;, null)
+    .invoke(null, null);
+};
+</code></pre>
+    </div>
+
+</div>
+
+
+
+
+
+
+
+                   
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> result-matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'injectable';
+            var COMPODOC_CURRENT_PAGE_URL = 'AppService.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+       <!-- Required to polyfill modern browsers as code is ES5 for IE... -->
+       <script src="../js/libs/custom-elements-es5-adapter.js" charset="utf-8" defer></script>
+       <script src="../js/menu-wc.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

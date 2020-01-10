@@ -1,1 +1,1 @@
-[View live](https://.github.io//)
+[View live](https://steflen.github.io/oh-my-repo/)
