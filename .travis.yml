@@ -1,0 +1,27 @@
+language: node_js
+node_js:
+  - '12'
+sudo: false
+
+cache:
+  directories:
+    - node_modules
+branches:
+  only:
+    - master
+notifications:
+  email: false
+before_script:
+  - npm prune
+script:
+  - yarn build
+  # - npm test
+after_success:
+  - bash ./.travis-deploy.sh
+env:
+  global:
+    - GH_USER: steflen
+    - GH_REPO: oh-my-repo
+      # this is encrypted from
+      # travis encrypt -r steflen/oh-my-repo GH_TOKEN=XXXXXXXXXXXXXXXXXXXXXXXXXXXX --add env.global
+    - secure: s9g1m5gEvvJc9aQXdhkBUGAGj6pF3IDRpMOtkh73W8PiaqV79I54fAUmY33PybUw6MAtvRaEF2vI6PphyA6BYpH5TPtgQC4ApSzEnWw2sm8zKAqCP/fqs+iAQjNACsvR6VhBVNZNwtP0eWf4/K3mpXhzdOQLVTMKDZpj+OYSlrsUckwuwiM5fl3W+E2RQXGKFDS+ZvfZxJ9187UMllyjAUeFzHXRTyjlMKoc8VWLyjOslhebE9lerqHg3knEhcushX47O0MFhGnNKma12Uuv2q8ebUlP8M1l1Te0sqduj+gzVVXdeL0MIK9y3PEga2F/lHJcaiyAj5FB9pygforOWoVHNdlyUi/Yjgg1LJ1koVByisesq4yzxdzVCx2vxbfnfTFZrXnRgbY5YJIlRI7BulMgC/lBgZLwmYuDh6SqVR40aBLhM6dtFMzcPUdTJhT7quj/6IhmKOD7eGRFprm9CqqTKFNyFnNiuMrAuYiw3Stxsn6Lwyl0mHwnmVC6IhP7GJe7C0ALEefMVwbbJQYam8gzMCt2S4ocgEyiIAOzy8NTuix8rMOEcRxi/aH5lb85GB47Ha8AvWFiwWg3GWVVqqFuvZBEJDNhg4/w90h0jvzSaWEgbbM9BsuikihGhMO0srUJMz2DEkMFtXlurfVt3DPlqFAy1onkRDft1C0dvlw=
