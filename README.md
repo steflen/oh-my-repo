@@ -1,5 +1,13 @@
 # OhMyRepo
 
+## STORYBOOK
+
+[view storybook demo](https://steflen.github.io/oh-my-repo/docs/index.html)
+
+## Compodoc
+
+[view compodoc demo](https://steflen.github.io/oh-my-repo/storybook/index.html)
+
 ## @nrwl/nx
 
 - <https://github.com/nrwl/example-nx-fullstack>
@@ -22,6 +30,7 @@
 
 ### Install Travis CLI
 
+- <https://github.com/dwyl/learn-travis#environment-variables-travis.yml>
 - <https://github.com/travis-ci/travis.rb#windows>
 - <https://voorhoede.github.io/front-end-tooling-recipes/travis-deploy-to-gh-pages/>
 
@@ -41,3 +50,5 @@ yarn repo:commit
 ## Kubernetes
 
 - <https://cloudnativejs.wordpress.com/2019/03/19/how-to-build-and-deploy-a-cloud-native-node-js-app-in-15-minutes/>
+
+## Fowler notes

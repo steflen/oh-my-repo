@@ -11,17 +11,17 @@ jobs:
   include:
     - stage: test
       script:
-        - echo 'Deploy!!'
-        - echo 'Installing Deps!'
+        - echo 'Installing dependencies'
         - yarn
-    #        - echo 'Testing!'
-    #        - yarn test:prod
+        # - echo 'Testing'
+        # - yarn test:prod
     - stage: deploy
       script:
         #        - npm install -g firebase-tools
         - yarn build
         - bash ./.travis-deploy.sh
-#        - firebase deploy --token "$FIREBASE_TOKEN"
+        #        - firebase deploy --token "$FIREBASE_TOKEN"
+        - npx semantic-release
 stages:
   - name: test
     # require the type to be a PR
