@@ -2135,6 +2135,11 @@
   resolved "https://registry.yarnpkg.com/@nstudio/electron/-/electron-8.1.1.tgz#c48219841d2a4c4a05650fa14f31e4d0a3fcce6b"
   integrity sha512-sxX1AYosii9ew2KLIEylSL8utqB6xYPQcC3kJPvd966xCUtiH4PDDgJd3VejyCYfPHnMj8fV3r3dWL2UlZLE0Q==
 
+"@nstudio/electron@8.1.2":
+  version "8.1.2"
+  resolved "https://registry.yarnpkg.com/@nstudio/electron/-/electron-8.1.2.tgz#52fa8a49321e03778eefb1fb6243ef539ca72381"
+  integrity sha512-G6qNBlAQFj3QF9NwtiI2xEw+wZATeXgrgVgjAwJmSsx5YvZnxgzH1OqG7YftwwVAg+fnnpu5AeTxSZ+qcZyIxw==
+
 "@nstudio/nativescript-angular@8.1.1":
   version "8.1.1"
   resolved "https://registry.yarnpkg.com/@nstudio/nativescript-angular/-/nativescript-angular-8.1.1.tgz#48f65cb439f6cd7976fb789cd35f371e56d528cf"
