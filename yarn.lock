@@ -2122,6 +2122,13 @@
   dependencies:
     "@nrwl/angular" "^8.0.0"
 
+"@nstudio/angular@8.1.2":
+  version "8.1.2"
+  resolved "https://registry.yarnpkg.com/@nstudio/angular/-/angular-8.1.2.tgz#a4eabc767cdff270ee5d857a256fc8159be39be4"
+  integrity sha512-YEYXSV2uV7p4QpCV1AkBP6JP6jjCkRCaC16ph3qGef6do5X66XyEE2vGlLf3mWvBLBLUwiWbmcZkiXveRdOC7g==
+  dependencies:
+    "@nrwl/angular" "^8.0.0"
+
 "@nstudio/electron-angular@8.1.1":
   version "8.1.1"
   resolved "https://registry.yarnpkg.com/@nstudio/electron-angular/-/electron-angular-8.1.1.tgz#27acb07286627dfc7b330f8f59b563e0c232d615"
