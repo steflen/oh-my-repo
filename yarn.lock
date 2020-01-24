@@ -2122,18 +2122,30 @@
   dependencies:
     "@nrwl/angular" "^8.0.0"
 
-"@nstudio/electron-angular@8.1.1":
-  version "8.1.1"
-  resolved "https://registry.yarnpkg.com/@nstudio/electron-angular/-/electron-angular-8.1.1.tgz#27acb07286627dfc7b330f8f59b563e0c232d615"
-  integrity sha512-JaqB2nl0gNsHc8sJg8bNRimp8Fc/ctYUVc5bzQfliX9GfhWMTpDsmT1UQN80Js429dL1vbKzFgRUetrSYvLCdw==
+"@nstudio/angular@8.1.2":
+  version "8.1.2"
+  resolved "https://registry.yarnpkg.com/@nstudio/angular/-/angular-8.1.2.tgz#a4eabc767cdff270ee5d857a256fc8159be39be4"
+  integrity sha512-YEYXSV2uV7p4QpCV1AkBP6JP6jjCkRCaC16ph3qGef6do5X66XyEE2vGlLf3mWvBLBLUwiWbmcZkiXveRdOC7g==
   dependencies:
-    "@nstudio/angular" "8.1.1"
-    "@nstudio/electron" "8.1.1"
+    "@nrwl/angular" "^8.0.0"
+
+"@nstudio/electron-angular@8.1.2":
+  version "8.1.2"
+  resolved "https://registry.yarnpkg.com/@nstudio/electron-angular/-/electron-angular-8.1.2.tgz#0a990a33f3e0317f22917b21c4f90863adb27911"
+  integrity sha512-j1XeNQOrKA6KDSI1nnKDlrH7peHCxjtXPIbbrDQKQ4fWSzRC3Fu5zWAwrAQH2vTJRgyx7DpkPM1oKkfmQ0uh7A==
+  dependencies:
+    "@nstudio/angular" "8.1.2"
+    "@nstudio/electron" "8.1.2"
 
 "@nstudio/electron@8.1.1":
   version "8.1.1"
   resolved "https://registry.yarnpkg.com/@nstudio/electron/-/electron-8.1.1.tgz#c48219841d2a4c4a05650fa14f31e4d0a3fcce6b"
   integrity sha512-sxX1AYosii9ew2KLIEylSL8utqB6xYPQcC3kJPvd966xCUtiH4PDDgJd3VejyCYfPHnMj8fV3r3dWL2UlZLE0Q==
+
+"@nstudio/electron@8.1.2":
+  version "8.1.2"
+  resolved "https://registry.yarnpkg.com/@nstudio/electron/-/electron-8.1.2.tgz#52fa8a49321e03778eefb1fb6243ef539ca72381"
+  integrity sha512-G6qNBlAQFj3QF9NwtiI2xEw+wZATeXgrgVgjAwJmSsx5YvZnxgzH1OqG7YftwwVAg+fnnpu5AeTxSZ+qcZyIxw==
 
 "@nstudio/nativescript-angular@8.1.1":
   version "8.1.1"
