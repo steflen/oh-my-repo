@@ -131,7 +131,7 @@
     "@nstudio/electron": "8.1.1",
     "@nstudio/electron-angular": "8.1.1",
     "@nstudio/nativescript": "8.1.1",
-    "@nstudio/nativescript-angular": "8.1.1",
+    "@nstudio/nativescript-angular": "8.1.2",
     "@nstudio/web": "8.1.1",
     "@nstudio/web-angular": "8.1.1",
     "@nstudio/xplat": "^8.1.1",
