@@ -51,4 +51,4 @@ yarn repo:commit
 
 - <https://cloudnativejs.wordpress.com/2019/03/19/how-to-build-and-deploy-a-cloud-native-node-js-app-in-15-minutes/>
 
-## Fowler notes
+
