@@ -2148,6 +2148,11 @@
   resolved "https://registry.yarnpkg.com/@nstudio/nativescript/-/nativescript-8.1.1.tgz#7f5b622ea9ec94ea41141e1f47b3c53984e27975"
   integrity sha512-x97N/b/6cygeo2sOmc2ZRH1ON7qYEtbOGDzkDNGDZ0zmQWOsvg793SHwpnsee3Kdp8sS7ceuDHNfpUbCAAor5g==
 
+"@nstudio/nativescript@8.1.2":
+  version "8.1.2"
+  resolved "https://registry.yarnpkg.com/@nstudio/nativescript/-/nativescript-8.1.2.tgz#1c347879f50e56a5a587d7c96b7d06a61180a275"
+  integrity sha512-oCQoRGqQ+UzGKC4w9ybXAscFGQaRvpwReb6siesDc23lAoa/3CQgUVRLpg+hH9AQvCpF2CoaYjFbHbFWafHLVw==
+
 "@nstudio/web-angular@8.1.1":
   version "8.1.1"
   resolved "https://registry.yarnpkg.com/@nstudio/web-angular/-/web-angular-8.1.1.tgz#2e4345066a18b29dd7f2e59efa724683ea6f4e93"
