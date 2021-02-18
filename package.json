@@ -154,7 +154,7 @@
     "angular-tslint-rules": "^1.20.3",
     "babel-loader": "^8.0.6",
     "codelyzer": "~5.1.0",
-    "cypress": "3.6.1",
+    "cypress": "3.8.3",
     "dotenv": "6.2.0",
     "electron": "^9.0.0",
     "electron-builder": "^20.44.4",
