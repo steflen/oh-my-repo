@@ -2122,6 +2122,13 @@
   dependencies:
     "@nrwl/angular" "^8.0.0"
 
+"@nstudio/angular@8.1.2":
+  version "8.1.2"
+  resolved "https://registry.yarnpkg.com/@nstudio/angular/-/angular-8.1.2.tgz#a4eabc767cdff270ee5d857a256fc8159be39be4"
+  integrity sha512-YEYXSV2uV7p4QpCV1AkBP6JP6jjCkRCaC16ph3qGef6do5X66XyEE2vGlLf3mWvBLBLUwiWbmcZkiXveRdOC7g==
+  dependencies:
+    "@nrwl/angular" "^8.0.0"
+
 "@nstudio/electron-angular@8.1.1":
   version "8.1.1"
   resolved "https://registry.yarnpkg.com/@nstudio/electron-angular/-/electron-angular-8.1.1.tgz#27acb07286627dfc7b330f8f59b563e0c232d615"
@@ -2135,18 +2142,23 @@
   resolved "https://registry.yarnpkg.com/@nstudio/electron/-/electron-8.1.1.tgz#c48219841d2a4c4a05650fa14f31e4d0a3fcce6b"
   integrity sha512-sxX1AYosii9ew2KLIEylSL8utqB6xYPQcC3kJPvd966xCUtiH4PDDgJd3VejyCYfPHnMj8fV3r3dWL2UlZLE0Q==
 
-"@nstudio/nativescript-angular@8.1.1":
-  version "8.1.1"
-  resolved "https://registry.yarnpkg.com/@nstudio/nativescript-angular/-/nativescript-angular-8.1.1.tgz#48f65cb439f6cd7976fb789cd35f371e56d528cf"
-  integrity sha512-7W+kgZ21eylkhs5bYVglliXSi6TFFUxnk19w2bCz1DsS+PKLDB9aRzhL4/qb8h4zF0X7Rj1H64jNZXxurU9GMg==
+"@nstudio/nativescript-angular@8.1.2":
+  version "8.1.2"
+  resolved "https://registry.yarnpkg.com/@nstudio/nativescript-angular/-/nativescript-angular-8.1.2.tgz#09f0c924c33501a8fb0c196a8cf1defc7c9b1bd3"
+  integrity sha512-KOPMonNDnsRH6W+NnugrUfV3eo1Y/RW3+rQit3IwxhqEdlUkCDAhe0hoa7AVrHBhKIQgCaV+4zAwEOvTbAYGJA==
   dependencies:
-    "@nstudio/angular" "8.1.1"
-    "@nstudio/nativescript" "8.1.1"
+    "@nstudio/angular" "8.1.2"
+    "@nstudio/nativescript" "8.1.2"
 
 "@nstudio/nativescript@8.1.1":
   version "8.1.1"
   resolved "https://registry.yarnpkg.com/@nstudio/nativescript/-/nativescript-8.1.1.tgz#7f5b622ea9ec94ea41141e1f47b3c53984e27975"
   integrity sha512-x97N/b/6cygeo2sOmc2ZRH1ON7qYEtbOGDzkDNGDZ0zmQWOsvg793SHwpnsee3Kdp8sS7ceuDHNfpUbCAAor5g==
+
+"@nstudio/nativescript@8.1.2":
+  version "8.1.2"
+  resolved "https://registry.yarnpkg.com/@nstudio/nativescript/-/nativescript-8.1.2.tgz#1c347879f50e56a5a587d7c96b7d06a61180a275"
+  integrity sha512-oCQoRGqQ+UzGKC4w9ybXAscFGQaRvpwReb6siesDc23lAoa/3CQgUVRLpg+hH9AQvCpF2CoaYjFbHbFWafHLVw==
 
 "@nstudio/web-angular@8.1.1":
   version "8.1.1"
