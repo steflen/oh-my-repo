@@ -132,7 +132,7 @@
     "@nstudio/electron-angular": "8.1.1",
     "@nstudio/nativescript": "8.1.1",
     "@nstudio/nativescript-angular": "8.1.1",
-    "@nstudio/web": "8.1.1",
+    "@nstudio/web": "8.1.2",
     "@nstudio/web-angular": "8.1.1",
     "@nstudio/xplat": "^8.1.1",
     "@semantic-release/changelog": "^3.0.6",

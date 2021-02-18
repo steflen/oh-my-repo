@@ -2163,6 +2163,13 @@
   dependencies:
     "@nrwl/web" "^8.0.0"
 
+"@nstudio/web@8.1.2":
+  version "8.1.2"
+  resolved "https://registry.yarnpkg.com/@nstudio/web/-/web-8.1.2.tgz#7bc195b4aba1968eaf9a74389ce7af1d401be823"
+  integrity sha512-Ecnug2pv34c40CrxFjdJCyauOUgXHzEM3hVxLRevZ7EeAvK7S1Vm6MF5O22EjyeV/o+Pd0AEOvauC8PNC8+rnQ==
+  dependencies:
+    "@nrwl/web" "^8.0.0"
+
 "@nstudio/xplat@^8.1.1":
   version "8.1.1"
   resolved "https://registry.yarnpkg.com/@nstudio/xplat/-/xplat-8.1.1.tgz#0d3664c58ac08b708d08b08e1f6e34000e27c6da"
