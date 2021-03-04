@@ -167,7 +167,7 @@
     "env-cmd": "^10.0.1",
     "eslint": "6.1.0",
     "jest": "24.1.0",
-    "jest-preset-angular": "7.0.0",
+    "jest-preset-angular": "8.4.0",
     "karma-coverage-istanbul-reporter": "^2.1.1",
     "karma-jasmine": "^3.0.3",
     "node-sass": "^4.12.0",
