@@ -166,7 +166,7 @@
     "electron-updater": "~4.2.0",
     "env-cmd": "^10.0.1",
     "eslint": "6.1.0",
-    "jest": "24.1.0",
+    "jest": "27.0.4",
     "jest-preset-angular": "7.0.0",
     "karma-coverage-istanbul-reporter": "^2.1.1",
     "karma-jasmine": "^3.0.3",
