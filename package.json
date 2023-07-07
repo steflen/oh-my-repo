@@ -176,7 +176,7 @@
     "prettier-tslint": "^0.4.2",
     "semantic-release": "^17.0.0",
     "semantic-release-cli": "^5.2.3",
-    "stylelint": "^12.0.1",
+    "stylelint": "^15.10.1",
     "stylelint-config-standard": "^19.0.0",
     "terser-webpack-plugin": "~2.2.0",
     "tns-platform-declarations": "~6.2.0",
