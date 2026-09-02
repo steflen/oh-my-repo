@@ -163,7 +163,7 @@
     "electron-rebuild": "~1.8.6",
     "electron-reload": "~1.5.0",
     "electron-store": "~5.1.0",
-    "electron-updater": "~4.2.0",
+    "electron-updater": "~6.3.0",
     "env-cmd": "^10.0.1",
     "eslint": "6.1.0",
     "jest": "24.1.0",
